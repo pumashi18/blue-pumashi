@@ -3,7 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>외계인힙합</title>
+    <title>외계인</title>
+    <style>
+      @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        font-family: "LeeSeoyun";
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        background-image: url("니보3.jpg");
+      }
+      .cootaniner {
+        width: 390px;
+        background-color: olivedrab;
+        height: 100%;
+      }
+      .photos {
+        margin-top: 30px;
+      }
+      .photo-frame {
+        background-color: white;
+        margin: 35px 20px;
+        height: 200px;
+
+        background-size: cover;
+
+        position: relative;
+      }
+      .photo-description {
+        color: white;
+        background-color: black;
+        width: fit-content;
+        padding: 0 20px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+
+        position: absolute;
+        bottom: 0;
+        transform: translate(-50);
+        left: 50%;
+      }
+
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .f-title {
+        font-size: 25px;
+        font-weight: 900;
+        color: rgb(255, 251, 0);
+      }
+      .f-date {
+        font-size: 15px;
+        font-weight: 50;
+        color: black;
+      }
+      #image1 {
+        background-image: url("./학기초.jpg");
+      }
+
+      #image2 {
+        background-image: url("./학기중.jpg");
+      }
+
+      #image3 {
+        background-image: url("./학기말.jpg");
+      }
+
+      #image4 {
+        background-image: url("./방학.jpg");
+      }
+      .vedio {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="cootaniner">
+      <div class="photos">
+        <div id="image1" class="photo-frame">
+          <span id="desl" class="photo-description">학기초</span>
+        </div>
+        <div id="image2" class="photo-frame">
+          <span id="desl" class="photo-description">학기중</span>
+        </div>
+        <div id="image3" class="photo-frame">
+          <span id="desl" class="photo-description">학기말</span>
+        </div>
+      </div>
+      <div class="photo-frame">
+        <iframe
+          src="https://www.youtube.com/embed/0tv3ooEWsZ4?si=TGLsaAIY96dZUs4sS"
+          frameborder="0"
+          class="vedio"
+        ></iframe>
+        <!-- <div id="image4" class="photo-frame">
+          <span id="desl" class="photo-description">방학</span>
+        </div> -->
+      </div>
+      <div class="footer">
+        <p class="f-title">2024 요약</p>
+        <p class="f-date">2025.02.09</p>
+      </div>
+    </div>
+  </body>
 </html>
